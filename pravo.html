@@ -1,0 +1,117 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+  <head>
+  <link rel="stylesheet" type="text/css" href="pravo.css">
+  </style>
+  </head>
+   <body>
+	<div class="">
+	
+	</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<div id="main">
+ 
+  <span  onclick="openNav()">&#9776; open</span>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+   <img src="our.jpg"/>
+   
+   <div  class="ss" style="float:right ; font-size :30px">
+<h3>رؤيتنا</h3>
+تحقيق أعلى درجات الإتقان والجودة في مجال التدريب والتطوير.
+
+تعتمد ®PRAVO ضبط تكاليف التدريب لتلامس الإحتياجات الفعلية لمعظم الشرائح والفئات الاقتصادية المختلفة لتحقيق اهدافهم التنافسية. نحن نعمل دوما من أجل أن تصبح ®PRAVO المرجع المعتمد للبرامج والدورات التدريبية التي تعتمدها العديد من الشركات والمؤسسات والقطاعات الحكومية والخاصة.
+.
+ </div>
+   <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+ <img  src="mission.jpg"/>
+ <div  class="ss" style="float:right ; font-size :30px">
+رسالتنا
+تقديم مجموعة شاملة من خدمات التدريب والحلول التنموية للأفراد والمهنيين في الشركات محليا وإقليميا.
+تنمية معرفة الأفراد ومهاراتهم وقدراتهم واتجاهاتهم في مجالات مختلفة.
+تخطيط القوى العاملة وتنميتها مما يؤدي إلى تحقيق التنمية الاقتصادية والاجتماعية.
+الامتثال للمعايير الوطنية والدولية في التعليم والتدريب لضمان الجودة.
+
+تم تصميم برامج الدبلوم التدريبي والدورات التدريبية في®PRAVO بطريقة فعّالة لتمنح المتدربين المعرفة الضرورية والمهارات اللازمة للإرتقاء والتواصل ضمن بيئة العمل.
+.
+ </div>
+  
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+ <script> 
+ function openNav() { 
+  document.getElementById("mySidenav").style.width = "250px"; 
+ document.getElementById("main").style.marginLeft = "250px"; 
+ } 
+
+ function closeNav() {
+  document.getElementById("mySidenav").style.width = "0"; 
+  document.getElementById("main").style.marginLeft= "0"; 
+} 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+ </script> 
+ 
+	</body> 
+</html>
